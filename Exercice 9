@@ -1,0 +1,19 @@
+public class Presentation {
+    public static void main(String[] args) {
+        
+        System.out.println("Je commence la présentation");
+        
+        String nom = "BODJRENOU";
+        String prenom = "Martial";
+        int age = 20;
+        double taille = 1.75; // taille en mètres
+        
+        System.out.println("Nom : " + nom);
+        System.out.println("Prénom : " + prenom);
+        System.out.println("Âge : " + age);
+        System.out.println("Taille : " + taille + " m");
+        
+        System.out.println("Je suis " + prenom + " " + nom + ", j'ai " + age + " ans et je mesure " + taille + " m.");
+        
+    }
+}
