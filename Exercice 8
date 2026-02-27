@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class MiniCalculatrice {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrez le premier nombre : ");
+        double nombre1 = scanner.nextDouble();
+        
+        System.out.print("Entrez le deuxième nombre : ");
+        double nombre2 = scanner.nextDouble();
+        
+        System.out.print("Entrez l'opération (addition, soustraction, multiplication, division) : ");
+        String operation = scanner.next();
+        
+        double resultat = 0;
+        
+        switch(operation) {
+            case "addition":
+                resultat = nombre1 + nombre2;
+                break;
+                
+            case "soustraction":
+                resultat = nombre1 - nombre2;
+                break;
+                
+            case "multiplication":
+                resultat = nombre1 * nombre2;
+                break;
+                
+            case "division":
+                if(nombre2 != 0) {
+                    resultat = nombre1 / nombre2;
+                } else {
+                    System.out.println("Erreur : Division par zéro impossible !");
+                    return;
+                }
+                break;
+                
+            default:
+                System.out.println("Opération invalide !");
+                return;
+        }
+        
+        System.out.println("Le résultat est : " + resultat);
+        
+        scanner.close();
+    }
+}
