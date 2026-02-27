@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class PlusGrandNombre {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrez le premier entier : ");
+        int nombre1 = scanner.nextInt();
+        
+        System.out.print("Entrez le deuxième entier : ");
+        int nombre2 = scanner.nextInt();
+        
+        if (nombre1 > nombre2) {
+            System.out.println("Le plus grand nombre est : " + nombre1);
+        } else if (nombre2 > nombre1) {
+            System.out.println("Le plus grand nombre est : " + nombre2);
+        } else {
+            System.out.println("Les deux nombres sont égaux.");
+        }
+        
+        scanner.close();
