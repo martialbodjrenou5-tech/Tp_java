@@ -1,0 +1,9 @@
+public class PresentationNom {
+    public static void main(String[] args) {
+        
+        String nom = "Martial";
+        
+        System.out.println("Je m'appelle " + nom);
+        
+    }
+}
